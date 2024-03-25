@@ -4,3 +4,9 @@
   entry: check-commit-message
   language: python
   stages: [commit-msg]
+- id: format-dotnet
+  name: Format dotnet code
+  description: Format dotnet
+  entry: format-dotnet
+  language: python
+  stages: [pre-commit]
