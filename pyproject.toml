@@ -16,3 +16,4 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 check-commit-message = "kodkod.pre_commit_hooks.check_commit_message:main"
+format-dotnet = "kodkod.pre_commit_hooks.format_dotnet:main"
