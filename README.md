@@ -16,13 +16,10 @@ Next, add Kodkod to your project's .pre-commit-config.yaml file:
 
 ```yaml
 repos:
-  - repo: https://github.com/VSX-ViewSonic/kodkod
+  - repo: https://github.com/VSX-ViewSonic/Kodkod
+    rev: v0.1.0
     hooks:
     - id: check-commit-message
-      name: Check for ClickUp ticket ID
-      entry: check-commit-message
-      language: python
-      stages: [commit-msg]
 ```
 Finally, install the git hook scripts:
 
