@@ -17,7 +17,7 @@ Next, add Kodkod to your project's .pre-commit-config.yaml file:
 ```yaml
 repos:
   - repo: https://github.com/VSX-ViewSonic/Kodkod
-    rev: v0.1.0
+    rev: 0.2.0
     hooks:
     - id: check-commit-message
 ```
