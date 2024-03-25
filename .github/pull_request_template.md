@@ -26,7 +26,5 @@ ClickUp: #ClickUp號碼
 <!-- Before / After Screenshot -->
 
 ## 確認事項
-- [ ] Unit tests
-- [ ] Self review
-- [ ] i18n
-- [ ] 環境變數需要進 Parameter Store
+- [ ] 是否修改共用元件
+- [ ] 是否 Commit 這次 Scope 以外的 Code
