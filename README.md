@@ -15,11 +15,16 @@ pip install pre-commit
 Next, add Kodkod to your project's .pre-commit-config.yaml file:
 
 ```yaml
+default_install_hook_types:
+  - pre-commit
+  - commit-msg
+
 repos:
   - repo: https://github.com/VSX-ViewSonic/Kodkod
     rev: 0.2.0
     hooks:
     - id: check-commit-message
+    - id: format-dotnet
 ```
 Finally, install the git hook scripts:
 
