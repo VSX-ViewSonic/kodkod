@@ -15,6 +15,8 @@ def main():
     for sln_file in sln_files:
         # Get the directory of the .sln file
         sln_directory = os.path.dirname(sln_file)
+        if sln_directory == "":
+            sln_directory = "."
 
         # Print the directory being processed (for visibility)
         print(f"Processing .sln in {sln_directory}")
