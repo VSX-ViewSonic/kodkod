@@ -6,7 +6,7 @@ def main() -> int:
     with open(".git/COMMIT_EDITMSG", "r") as file:
         first_line = file.readline().strip()
     # Define the regex pattern for checking the commit message
-    pattern = r"^(\[\w{9}\])+ (feat|chore|fix|ci|refactor|test|style|build|docs)(\(\w*\))?!?: .|^Merge (\(\w*\))?|^Sprint.(\(\w*\))?|^Revert.(\(\w*\))?"
+    pattern = r"^(\[[A-Z]+-\d+\])+ (feat|chore|fix|ci|refactor|test|style|build|docs)(\(\w*\))?!?: .|^Merge (\(\w*\))?|^Sprint.(\(\w*\))?|^Revert.(\(\w*\))?"
     if not re.match(pattern, first_line):
         print(
             "Commit message should have ClickUp ticket id and types(feat|chore|fix|ci|refactor|test|style|build|docs|db).",
