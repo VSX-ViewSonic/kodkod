@@ -21,7 +21,7 @@ default_install_hook_types:
 
 repos:
   - repo: https://github.com/VSX-ViewSonic/Kodkod
-    rev: 0.2.0
+    rev: 0.4.0
     hooks:
     - id: check-commit-message
     - id: format-dotnet
